@@ -19,7 +19,7 @@ const AddProduct = () => {
         console.log(localStorage.getItem('user'));
 
         
-        let result = await fetch("http://localhost:5000/add-product", {
+        let result = await fetch("https://ecommerce-backend-1-x0ct.onrender.com/add-product", {
             method: "post",
             body: JSON.stringify({ name, price, category, company, userId }),
             headers: {

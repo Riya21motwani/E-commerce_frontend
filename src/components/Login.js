@@ -17,7 +17,7 @@ const Login=()=>{
 
     const handlelogin=async()=>{
         console.warn(email,password);
-        let result =await fetch('http://localhost:5000/login' , {
+        let result =await fetch('https://ecommerce-backend-1-x0ct.onrender.com/login' , {
             method:'post',
             body:JSON.stringify({email,password}),
             headers: {
